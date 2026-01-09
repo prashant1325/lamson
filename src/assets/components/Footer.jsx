@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Phone,
   MessageCircle,
@@ -24,6 +25,7 @@ const Footer = () => {
             Premium quality cycles and accessories for professional riders and enthusiasts.
             Ride with power, ride with style.
           </p>
+
           <div className="flex gap-4 pt-2">
             <a href="#" className="hover:text-red-600 transition-colors">
               <Facebook size={20} />
@@ -43,23 +45,46 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="space-y-3 text-zinc-400 text-sm">
-            {[
-              "Home",
-              "About",
-              "Contact Us",
-             
-            ].map((item) => (
-              <li
-                key={item}
-                className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer group"
+
+            <li className="group">
+              <Link
+                to="/"
+                className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <ChevronRight
                   size={14}
                   className="text-red-600 group-hover:translate-x-1 transition-transform"
                 />
-                {item}
-              </li>
-            ))}
+                Home
+              </Link>
+            </li>
+
+            <li className="group">
+              <Link
+                to="/about"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <ChevronRight
+                  size={14}
+                  className="text-red-600 group-hover:translate-x-1 transition-transform"
+                />
+                About
+              </Link>
+            </li>
+
+            <li className="group">
+              <Link
+                to="/contact"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <ChevronRight
+                  size={14}
+                  className="text-red-600 group-hover:translate-x-1 transition-transform"
+                />
+                Contact Us
+              </Link>
+            </li>
+
           </ul>
         </div>
 
@@ -69,6 +94,7 @@ const Footer = () => {
             Support
           </h3>
           <div className="space-y-4 text-zinc-400 text-sm">
+
             <div className="flex items-start gap-3">
               <Phone size={18} className="text-red-600 shrink-0" />
               <div>
@@ -90,8 +116,9 @@ const Footer = () => {
 
             <div className="flex items-center gap-3">
               <Mail size={18} className="text-red-600" />
-              <span>support@LAMSON.com</span>
+              <span>support@lamson.com</span>
             </div>
+
           </div>
         </div>
 
@@ -115,17 +142,14 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="mt-16 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 text-xs">
-        <p>© 2026 LAMSON. ALL RIGHTS RESERVED.</p>
-        <div className="flex gap-6">
-          <span className="hover:text-white cursor-pointer transition-colors">
-            TERMS OF SERVICE
-          </span>
-          <span className="hover:text-white cursor-pointer transition-colors">
-            SHIPPING POLICY
-          </span>
-        </div>
-      </div>
+      {/* Copyright */}
+<div className="mt-16 pt-8 border-t border-zinc-900 flex flex-col items-center justify-center gap-4 text-red-600 text-xs font-bold tracking-widest">
+  <p className="text-center">
+    © 2026 <span className="text-white">LAMSON</span>. ALL RIGHTS RESERVED.
+  </p>
+  
+  <div className="flex gap-6"></div>
+</div>
     </footer>
   );
 };
