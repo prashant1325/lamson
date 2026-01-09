@@ -8,7 +8,7 @@ import {
   ChevronRight,
   Facebook,
   Instagram,
-  Twitter,
+  
 } from "lucide-react";
 
 const Footer = () => {
@@ -33,9 +33,7 @@ const Footer = () => {
             <a href="#" className="hover:text-red-600 transition-colors">
               <Instagram size={20} />
             </a>
-            <a href="#" className="hover:text-red-600 transition-colors">
-              <Twitter size={20} />
-            </a>
+            
           </div>
         </div>
 
