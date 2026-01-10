@@ -77,7 +77,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* LEGACY SECTION */}
+      {/* OUR FOUNDATION SECTION */}
       <section className="py-12 md:py-32 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           
@@ -85,7 +85,7 @@ const About = () => {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-1 bg-red-600"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">
-                The Legacy
+                Our Foundation
               </h2>
             </div>
 
