@@ -27,13 +27,13 @@ const Home = () => {
 
   const featuredProducts = [
     { id: 1, name: "12 Inch EVA Foam", img: prod1 },
-    { id: 2, name: "Paradise Yellow Tyre", img: prod2 },
+    { id: 2, name: "EVA Yellow Tyre", img: prod2 },
     { id: 3, name: "Front Basket", img: prod3 },
-    { id: 4, name: "Sports Bottle v1", img: prod4 },
+    { id: 4, name: " Water Bottle ", img: prod4 },
     { id: 5, name: "Lady Chain Cover", img: prod5 },
     { id: 6, name: "Fender (With Fitting)", img: prod6 },
     { id: 7, name: "Shark-Chain Cover", img: prod7 },
-    { id: 8, name: "Sports Bottle v2", img: prod8 },
+    { id: 8, name: "Sports Bottle", img: prod8 },
     { id: 9, name: "Eva Wheels 12 Inch", img: prod9 },
   ];
 
@@ -123,9 +123,9 @@ const Home = () => {
       <section className="py-12 bg-zinc-950 border-b border-zinc-900">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { label: "Years Experience", value: "25+" },
-            { label: "Premium Products", value: "500+" },
-            { label: "Global Reach", value: "40+" },
+            { label: "Years Experience", value: "30+" },
+            { label: "Premium Products", value: "100+" },
+            { label: "Global Reach", value: "10+" },
             { label: "Quality Checks", value: "100%" },
           ].map((stat, i) => (
             <div key={i} className="group">
