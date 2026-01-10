@@ -13,12 +13,12 @@ const About = () => {
   const navigate = useNavigate();
 
   const products = [
-    { name: "EVA Tyres ", path: "/products/spare-parts" },
+    { name: "EVA Tyres", path: "/products/spare-parts" },
     { name: "Chain Covers", path: "/products/spare-parts" },
     { name: "Mudguards", path: "/products/spare-parts" },
     { name: "Baskets", path: "/products/spare-parts" },
-    { name: "Safe Guards", path: "/products/spare-parts" },
-    { name: "Bottles", path: "/products/spare-parts" },
+    { name: "Safety Guards", path: "/products/spare-parts" },
+    { name: "Water Bottles", path: "/products/spare-parts" },
     { name: "Complete Spare Range", path: "/products/spare-parts" },
   ];
 
@@ -69,19 +69,19 @@ const About = () => {
             </span>
           </h1>
 
-          <p className="text-zinc-400 max-w-2xl mx-auto text-sm md:text-xl uppercase tracking-widest font-light">
-            Architecting the backbone of India's bicycle ecosystem for{" "}
-            <span className="text-white font-bold">30 years</span>.
+          <p className="text-zinc-400 max-w-3xl mx-auto text-sm md:text-xl uppercase tracking-widest font-light">
+            Powering India’s bicycle manufacturing ecosystem with
+            <span className="text-white font-bold"> precision, scale, and trust </span>
+            for over <span className="text-white font-bold">30 years</span>.
           </p>
         </div>
       </section>
 
-      {/* LEGACY SECTION - FIXED MOBILE VIEW & IMAGE STYLE */}
+      {/* LEGACY SECTION */}
       <section className="py-12 md:py-32 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           
           <div className="animate-fade-in-right">
-            {/* Red accent line + Title */}
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-1 bg-red-600"></div>
               <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">
@@ -90,7 +90,6 @@ const About = () => {
             </div>
 
             <div className="space-y-8">
-              {/* Founder names with red underlines exactly like image */}
               <p className="text-zinc-400 text-xl md:text-2xl leading-relaxed font-light">
                 Founded by{" "}
                 <span className="text-white font-extrabold border-b-4 border-red-600 inline-block mb-1">
@@ -102,21 +101,32 @@ const About = () => {
                 </span>.
               </p>
 
-              <p className="text-zinc-400 text-lg md:text-xl leading-relaxed">
-                Lamson bridges high-volume manufacturing with uncompromising
-                precision as a trusted <span className="text-red-600 font-bold italic">OEM partner</span>.
+              <p className="text-zinc-500 text-base md:text-lg leading-relaxed">
+                What began as a focused manufacturing venture has evolved into a
+                nationally recognized supplier for India’s bicycle industry.
               </p>
 
-              {/* Quote Block */}
+              <p className="text-zinc-400 text-lg md:text-xl leading-relaxed">
+                Lamson is a trusted{" "}
+                <span className="text-red-600 font-bold italic">
+                  OEM manufacturing partner
+                </span>
+                , delivering precision-engineered bicycle components at scale.
+                With decades of expertise, we combine industrial efficiency,
+                stringent quality control, and consistent performance to support
+                leading bicycle brands across India.
+              </p>
+
               <div className="border-l-4 border-red-600 bg-zinc-900/50 p-6">
-                 <p className="text-zinc-200 italic text-lg md:text-xl">
-                    "We don’t just supply parts; we engineer confidence."
-                 </p>
+                <p className="text-zinc-200 italic text-lg md:text-xl">
+                  "Every component we manufacture reflects our commitment to
+                  reliability, durability, and engineering excellence."
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Stats section */}
+          {/* STATS */}
           <div className="grid grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-0">
             <div className="bg-zinc-900 p-8 border-b-8 border-red-600">
               <h3 className="text-5xl md:text-7xl font-black italic">30+</h3>
@@ -125,7 +135,9 @@ const About = () => {
               </p>
             </div>
             <div className="bg-zinc-900 p-8 border-b-8 border-white">
-              <h3 className="text-5xl md:text-7xl font-black text-red-600 italic">OEM</h3>
+              <h3 className="text-5xl md:text-7xl font-black text-red-600 italic">
+                OEM
+              </h3>
               <p className="text-zinc-500 uppercase text-xs mt-4 font-bold tracking-widest">
                 Partner of Choice
               </p>
@@ -138,16 +150,30 @@ const About = () => {
       {/* CORE PILLARS */}
       <section className="py-20 bg-zinc-950 border-y border-zinc-900">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          {[ 
-            { icon: <GiFactory />, title: "High-Volume OEM", text: "Optimized for mass production" },
-            { icon: <GiCheckMark />, title: "Precision QA", text: "Rigorous quality assurance" },
-            { icon: <GiTruck />, title: "Pan-India Logistics", text: "Nationwide supply chain" },
+          {[
+            {
+              icon: <GiFactory />,
+              title: "OEM Manufacturing",
+              text: "Scalable, high-volume production",
+            },
+            {
+              icon: <GiCheckMark />,
+              title: "Quality Assurance",
+              text: "Strict process & product validation",
+            },
+            {
+              icon: <GiTruck />,
+              title: "Nationwide Supply",
+              text: "Reliable pan-India distribution",
+            },
           ].map((item, i) => (
             <div key={i} className="group">
               <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-zinc-900 border border-zinc-800 group-hover:border-red-600 transition-all">
                 <span className="text-4xl text-red-600">{item.icon}</span>
               </div>
-              <h4 className="text-xl md:text-2xl font-black uppercase mb-2 tracking-tighter">{item.title}</h4>
+              <h4 className="text-xl md:text-2xl font-black uppercase mb-2 tracking-tighter">
+                {item.title}
+              </h4>
               <p className="text-zinc-500 text-sm uppercase tracking-widest">
                 {item.text}
               </p>
@@ -178,15 +204,15 @@ const About = () => {
       <section className="bg-red-600 py-20 text-center relative overflow-hidden">
         <GiCarWheel className="absolute text-[300px] md:text-[400px] opacity-10 -top-20 -left-20 animate-spin-slow" />
         <div className="relative z-10 px-6">
-            <h2 className="text-5xl md:text-8xl font-black uppercase italic mb-10 leading-[0.8] tracking-tighter">
+          <h2 className="text-5xl md:text-8xl font-black uppercase italic mb-10 leading-[0.8] tracking-tighter">
             Let's Build Together
-            </h2>
-            <button
-              onClick={() => navigate("/contact")}
-              className="bg-black text-white px-10 md:px-16 py-4 md:py-6 font-black uppercase hover:bg-white hover:text-black transition-all active:scale-95"
-            >
-              Contact OEM Division
-            </button>
+          </h2>
+          <button
+            onClick={() => navigate("/contact")}
+            className="bg-black text-white px-10 md:px-16 py-4 md:py-6 font-black uppercase hover:bg-white hover:text-black transition-all active:scale-95"
+          >
+            Contact OEM Division
+          </button>
         </div>
       </section>
     </div>
